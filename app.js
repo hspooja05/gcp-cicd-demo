@@ -8,7 +8,7 @@ app.use(express.json());
 // Home API
 app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Welcome to GCP CI/CD Project!"
+    message: "Welcome to GCP CI/CD Project! Auto Deployment Successful!"
   });
 });
 
