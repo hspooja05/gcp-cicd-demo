@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudFlow | CI/CD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">☁️ CloudFlow</div>
+    <span class="live">● LIVE DEPLOYMENT</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">GOOGLE CLOUD CI/CD PROJECT</p>
+      <h1>Build. Deploy.<br><span>Deliver.</span></h1>
+      <p class="description">
+        A Node.js application demonstrating Continuous
+        Integration and Continuous Deployment.
+      </p>
+      <a href="#status" class="button">Explore Dashboard ↓</a>
+    </section>
+
+    <section id="status">
+      <h2>Deployment Dashboard</h2>
+      <p class="description">Your application status at a glance.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🚀 Deployment</h3>
+          <p>Live</p>
+          <small>Hosted on Render</small>
+        </div>
+        <div class="card">
+          <h3>⚙️ Backend</h3>
+          <p>Running</p>
+          <small>Node.js + Express</small>
+        </div>
+        <div class="card">
+          <h3>🔄 Pipeline</h3>
+          <p>Connected</p>
+          <small>GitHub Actions</small>
+        </div>
+      </div>
+
+      <div class="health">
+        <h3>API Health Check</h3>
+        <p id="health-message">Checking server...</p>
+        <strong id="health-status">Checking...</strong>
+      </div>
+
+      <a class="github"
+         href="https://github.com/hspooja05/gcp-cicd-demo"
+         target="_blank">
+        View Source Code on GitHub ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>GCP CI/CD Demo | Node.js & Express</footer>
+  <script src="script.js"></script>
+</body>
+</html>

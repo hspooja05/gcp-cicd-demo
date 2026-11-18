@@ -1,14 +1,19 @@
 
 const express = require("express");
 
+const path = require("path");
+
 const app = express();
 
 app.use(express.json());
 
+// Serve frontend files
+app.use(express.static(path.join(__dirname, "public")));
+
 // Home API
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.status(200).json({
-    message: "Welcome to GCP CI/CD Project! Auto Deployment Successful!"
+    message: "Welcome to GCP CI/CD Project!"
   });
 });
 
